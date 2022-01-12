@@ -1,0 +1,511 @@
+nav {   /*menu*/
+  width: 100%;
+  background: #04293A;
+  height: 60px;
+  margin-bottom: 50px;
+}
+
+nav ul {
+
+   list-style-type: none;
+   flex: 1;
+   display: flex;
+padding: 0.5%;
+}
+
+nav li {
+  display: inline;
+  flex:1;
+z-index: 1;
+}
+
+
+nav a {
+  /* width: 100%; */
+  color: white;
+  display: block;
+  text-decoration: none;
+  font-size: 77%;
+  text-align: center;
+  padding: 5%;
+  border-radius: 30px;
+  font-family: 'time new romain',sans-serif;
+  font-weight: bold;
+}
+
+
+nav a:hover {
+  background: #064663;
+}
+nav ul li  ul {   /*sous menu */
+background: #04293A;
+display: none;
+padding: 10%;
+ width: 100%;
+  }
+
+nav ul li ul li {
+  float: none;
+}
+
+
+nav ul li:hover ul{
+  display: block;
+}
+
+
+
+p, li {
+  color: white;
+  font-family: 'time new romain',sans-serif;
+  font-size: 20px;
+
+
+}
+h3
+{color:#396EB0;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'time new romain';
+
+}
+h2
+{color:#93B5C6;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'time new romain';
+
+}
+
+.actu
+{    /* titre de la page actulité */
+  color:#064663;;
+  text-align: left;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'time new romain';
+     margin-left: 10rem;
+    margin-top: 1rem;
+  }
+  .titre
+  {    /*titre de la page crypto*/
+    color:#041C32;
+    text-align: center;
+      font-size: 40px;
+      font-weight: bold;
+      font-family: 'time new romain';
+    }
+
+body
+{
+
+  background-image: url(../image/image.jpg);   /*pour mettre un background*/
+  background-size:contain;  /* redimensionne l'image afin qu'elle soit la plus grande possible et que l'image conserve ses proportions*/
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* pour enlever le scroll horizontal*/
+}
+form
+ {  /* pour centrer le formulaire*/
+   margin: 0 auto;
+    width:60%;
+ }
+
+
+/* Style de inputs, select elements and textareas */
+input[type=text], select, textarea{
+  width: 60%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style de l'étiquette à afficher à côté des entrées */
+label {
+  padding: 3%;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Style du  button */
+input[type=submit] {
+  display: inline-block;
+  background-color: #041C32;        /*la couleur du background*/
+  color: white;                     /*la couleur du texte*/
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;    /*permet de définir des coins arrondis pour la bordure du button.*/
+  cursor: pointer;
+
+}
+
+
+/*fixer les labels a 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* fixer les inputs: 75% width  */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.envoyer {
+  /*centrer le boutton envoyer au centre */
+  text-align: center;
+}
+/* Disposition réactive - lorsque l'écran fait moins de 600 pixels de large, empilez les deux colonnes l'une sur l'autre plutôt que l'une à côté de l'autre */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+iframe{
+  /* pour centrer les vidéos et mettre la taille a 80% */
+margin: 0;
+text-align: center;
+width:80%;
+}
+
+h1
+{
+  text-align: center;}
+
+
+  .def{
+    flex: 10;
+  }
+
+  .def {
+    /* pour fixer l'article */
+    background-color: #041C32;
+    padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  text-align: justify;              /*pour justifier le texte */
+    width: 50%;
+    margin:auto;
+    opacity:0.8;                    /*transparence*/
+    border-radius: 30px;
+  }
+  .crypto
+  {    /*  pour centrer les images  */
+    margin: 0;
+    text-align: center;
+    width:80%;
+
+  }
+  .audio
+  { /*pour center l'audio*/
+    margin:0;
+    text-align: center;
+  }
+
+.inner-footer
+/*permet de faire le footer*/
+{
+  margin:0;
+  padding:0;
+  width: 100%;
+  background-color: #191A19;
+
+}
+  .social-links
+{  /*permet de fixer les icone de réseaux sociaux*/
+  display: flex;
+}
+.social-links ul{
+  padding: 50px;
+  display: flex;
+  width: 300px;
+  height: 30px;
+  margin: auto;
+}
+
+.social-items{
+  list-style: none;
+}
+.social-items a {
+  padding:  10px 20px;
+  font-size: 40px;
+  color: #064663;
+  transition: all .25s;
+
+}
+.social-items a:hover{
+  color: #04293A;
+}
+.quick-links {
+  /*fixer les liens */
+  display: flex;
+text-align: center;
+  margin: auto;
+}
+.quick-links ul {
+  list-style-type: none;
+  flex: 1;
+  display: flex;
+padding: 0.5%;
+
+}
+.quick-items{
+  list-style: none;
+  display: inline;
+  flex:1;
+}
+.quick-items a {
+    padding:8%;
+  font-size: 85%;
+  color:#064663;
+  font-weight: bold;
+  transition: all .25s;
+  font-family: 'time new romain',sans-serif;
+
+}
+.quick-items a:hover{
+  color: #04293A;
+}
+
+.autre_footer
+{
+  padding: 15px;
+  text-align: left;
+  color: white;
+  font-size: 20px;
+  background-color:  #04293A;
+  font-family: 'time new romain',sans-serif;
+
+}
+
+
+
+.carousel-items {
+  /*permet de faire le carousel de la page Accueil*/
+  display: flex;
+  flex-wrap: wrap;  /*permet de placer les images sur plusieurs lignes  */
+  justify-content: space-around; /* permet de laisser un espace entre les images*/
+  z-index: 2; /*pour fixer le carousel en 2eme position  */
+}
+.carousel-item {
+    list-style: none;
+}
+.card
+{
+  padding-top: 1px;
+}
+.card-content {
+  width: 400px; /*pour mettre le texte et l'image de la page accueil sur le meme niveau  */
+
+}
+.card-content {
+  /*le texte de la page d'accueil */
+color: white;
+font-family: 'time new romain',sans-serif;
+font-size: 23px;
+font-weight: bold;
+
+}
+.card-content a ,.shadow p{
+  color :#04293A ;
+  font-family: 'time new romain';
+  font-weight: bold;
+  font-size: 25px;
+}
+
+div.card img {
+  /*redimensionne les image a 400px */
+  width: 400px;
+  height: 400px;
+}
+.card a:hover {
+  border: 1px solid #777;
+}
+
+/*faire carousel 3D*/
+.slideshow{
+    margin:0 auto;
+    width:100%;
+    height:110vh;
+
+    }
+
+.content{
+   margin: auto;
+    width:360px;
+    perspective:1000px;
+    padding-top:30px;
+}
+.carasoul2{
+    width:100%;
+    animation:rotar 30s infinite linear; /*pour fixer la rotation a 30s*/
+     transform-style: preserve-3d; /*pour faire le carousel en 3d*/
+
+}
+.carasoul2:hover{
+  /* permet de pointer l'image avec la souris */
+    cursor: pointer;
+    animation-play-state: paused;
+}
+.carasoul2 figure{
+    width:100%;
+    height:360px;
+    position: absolute;
+}
+/*permet de positionner les images de la pages cryto monnaies
+ rotateY permet de bien positionner les images et translateZ(230px) mettre de distance  entre eux
+  pour bien positionner  j'ai 4 images de  widh 360px
+  si on  divise 360/4=90 deg
+  pour  1 ere  90deg  , 2eme 180deg(90*2) , 3eme 270deg */
+.carasoul2 figure:nth-child(1){
+
+    transform: rotateY(0deg) translateZ(230px);
+}
+.carasoul2 figure:nth-child(2){
+    transform: rotateY(90deg) translateZ(230px);
+}
+.carasoul2 figure:nth-child(3){
+    transform: rotateY(180deg) translateZ(230px);
+}
+.carasoul2 figure:nth-child(4){
+    transform: rotateY(270deg) translateZ(230px);
+}
+
+.carasoul2 img{
+    image-rendering: auto;
+    transition: all 1000ms;
+    width:100%;
+    height:100%;
+}
+.carasoul2 img:hover{
+    transform:scale(1.2);
+    transition: all 300ms;
+    border:1px solid;
+    border-radius:5px;
+
+}
+.shadow{
+    box-shadow: 0 0 20px  0 #000;
+    border-radius:5px;
+}
+@keyframes rotar{ /*permet de faire la rotation 360 degree*/
+    from{
+        transform:rotateY(0deg);
+    }
+    to{
+        transform:rotateY(360deg)
+    }
+}
+
+
+
+
+       /*FAQ*/
+   .header{    /*ENTETE */
+         border-radius: 20px 20px 0 0;
+         padding:10px 0;
+         background-color:  #04293A;
+         color:#fff;
+       }
+       .faq-item{
+         margin-bottom: 30px;
+         margin-top:30px;
+       }
+       .faq-body{
+         display: none;
+         margin-top:25px;
+         font-size: 23px;
+         font-family: 'time new romain';
+
+       }
+       .faq-wrapper{  /*pour mettre la taille de faq a 75%*/
+         width:75%;
+         margin: 0 auto;
+       }
+       .faq-inner{
+         padding:30px;
+         background-color: white;
+       }
+       .faq-plus {    /*pour positionner l'icone + a droite*/
+           float: right;
+           font-size: 1.4em;
+           line-height: 1em;
+           cursor: pointer;
+         }
+         hr{
+           background-color: #9b9b9b;
+         }
+          .header{
+           width:100%;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+         }
+
+
+
+
+         .inner {
+           /* mettre uun background pour la page plan */
+          background-image: url(../image/tst.jpg);
+          display: flex;
+          background-repeat: no-repeat;
+          background-size: cover;
+                   }
+
+         .inner li {
+           /*positionner la page plan */
+           margin-bottom: 20px;
+           margin-top:20px;
+           margin-left: 5px;
+
+
+         }
+        .inner  a {
+          font-weight: bold;
+          font-family: 'time new romain';
+          font-size: 40px;
+          color:#04293A ;
+
+        }
+        .inner a:hover ,.faq-inner a:hover{
+          color:#064663;
+        }
+
+.apropos{    /*pour mettre le texte et l'image  a coté page apropos */
+  display:flex;
+}
+.apropos img{
+  /*pour positionner l'image */
+  margin-left: 5%;
+  margin-right: 5%;
+   width: 45%;
+  margin-bottom: 5%;
+}
+
+  .defe {   /*zone de texte de la page apropos */
+    background-color: #041C32;
+    padding: 5%;
+    text-align: justify;
+    margin-top: 4%;
+    margin-bottom:6%;
+    margin-right:6%;
+    opacity:0.8;
+    align-items:center;
+    border-radius: 80px;
+  }
